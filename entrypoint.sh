@@ -37,7 +37,11 @@ for EXT in $EXTENSIONS; do
       "https://pastebin.com/api/api_post.php")
 
     echo "Response from Pastebin: $RESPONSE"
-    echo "| $RESPONSE | $FILE |" >> $GITHUB_STEP_SUMMARY
+    if echo "$RESPONSE" | grep -q "Bad API request"; then
+      echo "| $RESPONSE | $FILE |" >> $GITHUB_STEP_SUMMARY
+    else
+      echo "| [$RESPONSE]($RESPONSE) | $FILE |" >> $GITHUB_STEP_SUMMARY
+    fi
   done
 done
 
