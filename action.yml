@@ -2,6 +2,9 @@
 name: 'paste to pastebin'
 description: 'push src files to pastebin'
 author: 'Owen Blount'
+branding:
+  icon: 'award'
+  color: 'green'
 inputs:
   dir_to_upload:
     description: 'path to the directory in your repo that you wish to paste to pastebin'
