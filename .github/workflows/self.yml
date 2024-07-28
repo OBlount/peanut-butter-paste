@@ -1,0 +1,19 @@
+---
+name: 'self'
+
+on: 
+  workflow_dispatch:
+
+jobs:
+  self:
+    runs-on: 'ubuntu-latest'
+    steps:
+    - name: 'Checkout code'
+      uses: 'actions/checkout@v4'
+
+    - name: 'run self'
+      uses: 'action.yml'
+      with:
+        folder: 'test/'
+      env:
+        PASTEBIN_API_KEY: ${{ secrets.PASTEBIN_API_KEY }}
