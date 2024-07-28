@@ -1,6 +1,7 @@
 ---
 name: 'paste to pastebin'
 description: 'push src files to pastebin'
+author: 'Owen Blount'
 inputs:
   dir_to_upload:
     description: 'path to the directory in your repo that you wish to paste to pastebin'
@@ -9,9 +10,6 @@ inputs:
   ext_whitelist:
     description: 'comma seperated list of accepted file extensions'
     default: ''
-outputs:
-  pastebin_urls:
-    description: 'list of pushed pastebin code urls'
 runs:
   using: 'docker'
   image: 'Dockerfile'
