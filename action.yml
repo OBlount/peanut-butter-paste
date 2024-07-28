@@ -3,7 +3,7 @@ name: 'paste to pastebin'
 description: 'push src files to pastebin'
 author: 'Owen Blount'
 branding:
-  icon: 'award'
+  icon: 'archive'
   color: 'green'
 inputs:
   dir_to_upload:
