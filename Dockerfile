@@ -1,5 +1,5 @@
 FROM alpine:latest
-WORKDIR /usr/peanut-butter
+WORKDIR /usr/src
 COPY ./entrypoint.sh ./
 RUN chmod +x ./entrypoint.sh
-ENTRYPOINT ["./entrypoint.sh"]
+ENTRYPOINT ["/usr/src/entrypoint.sh"]
