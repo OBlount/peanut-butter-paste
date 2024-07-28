@@ -11,8 +11,6 @@ A GitHub Action to upload specific files to Pastebin and generate a report upon 
 
 A comma seperated list of accepted file extensions. Default `""`.
 
-## Inputs
-
 ## Example usage
 Create a workflow within your repo by creating a yaml file in `.github/workflows/`. Make sure you set your [github secret](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions) to your [Pastebin](https://pastebin.com/) API key.
 ```yml
