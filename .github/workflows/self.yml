@@ -14,6 +14,7 @@ jobs:
     - name: 'run self'
       uses: './'
       with:
-        folder: 'test/'
+        dir_to_upload: 'test/'
+        ext_whitelist: 'txt,TXT'
       env:
         PASTEBIN_API_KEY: ${{ secrets.PASTEBIN_API_KEY }}
