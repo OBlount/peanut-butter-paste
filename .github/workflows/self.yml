@@ -12,7 +12,6 @@ jobs:
       uses: 'actions/checkout@v4'
 
     - name: 'run self'
-      shell: bash
       uses: './'
       with:
         dir_to_upload: 'test/'

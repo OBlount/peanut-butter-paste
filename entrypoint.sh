@@ -1,4 +1,4 @@
-#!/bin/bash -l
+#!/bin/sh -l
 ## A bash script for the job to push select files to pastebin.com
 ## DIR_TO_UPLOAD -- The path to the dir to search files in
 ## EXT_WHITELIST -- A comma seperated string whitelisting file extensions
