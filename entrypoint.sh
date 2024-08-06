@@ -31,9 +31,9 @@ for EXT in $EXTENSIONS; do
     echo "Uploading $FILE to Pastebin"
     FILE_CONTENTS=$(cat "$FILE")
     RESPONSE=$(curl -s -X POST \
-      -d "api_dev_key=$PASTEBIN_API_KEY" \
-      -d "api_paste_code=$FILE_CONTENTS" \
-      -d "api_option=paste" \
+      --data-urlencode "api_dev_key=$PASTEBIN_API_KEY" \
+      --data-urlencode "api_paste_code=$FILE_CONTENTS" \
+      --data-urlencode "api_option=paste" \
       "https://pastebin.com/api/api_post.php")
 
     echo "Response from Pastebin: $RESPONSE"
